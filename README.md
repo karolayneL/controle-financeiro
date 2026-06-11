@@ -16,4 +16,4 @@ Uma WPA (Web Page Application) mobile-first para controle financeiro pessoal, de
 
 1. Clone este repositório:
    ```bash
-   git clone [COLOQUE_SEU_LINK_DO_GITHUB_AQUI]
+   git clone [https://github.com/karolayneL/controle-financeiro.git]
