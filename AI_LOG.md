@@ -2,6 +2,8 @@
 
 | Parte do código | IA usada | Prompt/instrução dado | Por que usou IA aqui |
 | :--- | :--- | :--- | :--- |
-| Estrutura Base e Estado (`App.tsx`) | Gemini | "faça pra mim esse projeto, va me explicando cada passo de como fazer..." | Para estruturar o boilerplate inicial com React + TypeScript e construir a lógica de persistência via `localStorage`, garantindo uma base sólida e livre de bugs. |
-| Lógica de Filtros e Resumo Financeiro | Gemini | O mesmo prompt acima. | Para agilizar a criação das funções de redução de arrays (cálculo de Saldo, Receitas e Despesas) e a lógica de filtro por categorias. |
-| Configuração do Tailwind v4 | Gemini | (Envio de fotos do erro no terminal) | Para solucionar o erro de conflito de versões do npx e configurar o Tailwind diretamente via plugin do Vite (`@tailwindcss/vite`). |
+| Estrutura Base e Tipagem (`types.ts`) | Gemini | "Gere a estrutura de tipagem em TypeScript para uma transação financeira (id, description, amount, category, date, type)." | Acelerar a criação das interfaces (interfaces e types) do TypeScript, garantindo a tipagem correta dos dados desde o início do projeto. |
+| Persistência de Dados (`App.tsx`) | Gemini | "Crie a lógica usando useState e useEffect para persistir um array de transações no localStorage de forma síncrona no React." | Garantir a aplicação da melhor prática de persistência de estado nativa, poupando o tempo de escrever o boilerplate manual do localStorage. |
+| Filtros e Cálculos (`App.tsx`) | Gemini | "Qual a melhor forma de usar os métodos filter e reduce para calcular dinamicamente o saldo total, receitas e despesas com base no array de transações?" | Agilizar a construção da lógica matemática de redução de arrays para a exibição em tempo real do resumo financeiro. |
+| Layout com Tailwind | Gemini | "Sugira uma estrutura de classes do Tailwind CSS para um formulário responsivo (mobile-first) em grid." | Facilitar a prototipagem do layout das seções do aplicativo, focando na responsividade e na consistência visual sem usar bibliotecas prontas. |
+| Debugging do Tailwind v4 | Gemini | (Envio de foto do erro: "could not determine executable to run" via npx) | Solucionar um conflito de cache do `npx` com a nova versão do Tailwind v4, optando pela instalação direta via plugin do Vite (`@tailwindcss/vite`). |
